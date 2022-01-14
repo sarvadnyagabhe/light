@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="text">Make Light On/OFF</p>
+    <div class="firstdiv">
+        <div class="secdiv">
+            <img src="img/lightoff.jpg" id="lightid" >
+             <p>Switch</p> 
+        </div>
+    </div>
+    <div class="btn">
+        <img src="img/btnon.jpg" class="btnimg" id="btnid" onclick="switchlight()">
+    </div>
+
+    <script>
+        const switchlight = () => {
+            let light = document.getElementById('lightid');
+            let btnid = document.getElementById('btnid');
+            let para = document.getElementById('text');
+            if (light.src.match('lighton') && btnid.src.match('btnoff')) {
+                light.src = "img/lightoff.jpg";
+                btnid.src = "img/btnon.jpg";
+                para.innerHTML = "Light is OFF";
+            } else {
+                light.src = "img/lighton.jpg";
+                btnid.src = "img/btnoff.jpg";
+                para.innerHTML = "Light is On";
+            }
+        }
+    </script>
+</body>
+
+</html>

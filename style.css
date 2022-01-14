@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.firstdiv {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(234, 235, 229);
+    background-color: brown
+}
+
+#lightid {
+    width: 55vh;
+    height: 60vh;
+}
+
+.btn {
+    width: 20vh;
+    height: 10vh;
+    margin-left: 90vh;
+    margin-top: 18vh;
+    margin-bottom: 20vh;
+}
+
+.btnimg {
+    width: 25vh;
+    height: 30vh;
+
+}
+
+.switch {
+    width: 8vh;
+    height: 10vh;
+
+    background-color: blueviolet;
+}
